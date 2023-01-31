@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>팝업 창에서 클릭한 내용을 메인 창에</title>
+        <style>
+
+        </style>
+    </head>
+
+    <body>
+        <script>
+            popwin = window.open("html/doit-event.html", "popup", "width=750, height=600");
+            popwin.opener = self;
+        </script>
+    </body>
+</html>

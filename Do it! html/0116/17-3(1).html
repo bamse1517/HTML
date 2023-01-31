@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>이미지를 클릭하면 알림 함수 실행하기</title>
+        <style>
+
+        </style>
+    </head>
+    
+    <body>
+        <div id="container">
+            <img src="images/cup-1.png" id="cup">
+        </div>
+
+        <script>
+            var cup = document.querySelector('#cup');
+            cup.onclick = changePic;
+
+            function changePic() {
+                cup.src = "images/cup-2.png";
+            }
+        </script>
+    </body>
+</html>
